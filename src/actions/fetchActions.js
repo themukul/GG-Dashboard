@@ -20,7 +20,7 @@ export const fetchDataAction = () => {
     dispatch(fetchingData());
     return Axios({
       method: 'GET',
-      url: 'http://www.mocky.io/v2/5cd04a20320000442200fc10'
+      url: 'https://www.mocky.io/v2/5cd04a20320000442200fc10'
     })
       .then(response => {
         if (!response) {
