@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { getECPM } from '../../utils/common';
+import { getECPM, mediaQueryMobile } from '../../utils/common';
 
 import { Table, Tag } from 'antd';
 
@@ -20,7 +20,8 @@ const columns = [
         return 1;
       }
       return 0;
-    }
+    },
+    fixed: mediaQueryMobile() ? 'left' : false
   },
   {
     title: 'Game',
@@ -78,5 +79,6 @@ export const ResultsTable = props => (
       pageSizeOptions: [5, 10],
       defaultPageSize: 5
     }}
+    scroll={mediaQueryMobile() ? { x: 800 } : {}}
   />
 );

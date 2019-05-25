@@ -16,7 +16,7 @@ class App extends React.Component {
     notification['error']({
       message: 'No Internet',
       description:
-        'It seems like your internet is either to slow or disconnected. Kindly refresh!',
+        'It seems like your internet is either too slow or disconnected. Kindly refresh!',
       duration: 0
     });
   }
