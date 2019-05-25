@@ -21,7 +21,6 @@ class Dashboard extends React.Component {
     };
   }
   onChange = (date, dateString) => {
-    console.log(dateString);
     this.setState({
       selectedRange: dateString
     });

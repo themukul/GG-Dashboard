@@ -7,9 +7,12 @@ import { notification } from 'antd';
 class App extends React.Component {
   constructor(props) {
     super(props);
+
+    // handle offline event
     window.addEventListener('offline', this.onOffline);
   }
   componentWillUnmount() {
+    // detach offline event handler
     window.removeEventListener('offline', this.onOffline);
   }
   onOffline = () => {
