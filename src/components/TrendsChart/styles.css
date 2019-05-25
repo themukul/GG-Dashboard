@@ -1,0 +1,10 @@
+.line_chart {
+  width: 730px;
+  height: 250px;
+}
+
+@media screen and (max-width: 767) {
+  body {
+    background-color: blue;
+  }
+}
